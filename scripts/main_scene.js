@@ -55,7 +55,7 @@ class MainScene extends Phaser.Scene {
         } else {
             this.player.x -= 20;// 横方向へ移動を設定
         }
-        if (this.player2.y >= D_WIDTH - 100) this.player2_direction = -1;
+        if (this.player2.y >= D_WIDTH - 220) this.player2_direction = -1;
         if (this.player2.y <= 100) this.player2_direction = 1;
         // プレイヤー2の移動
         if (this.player2_direction == 1) {
@@ -64,7 +64,7 @@ class MainScene extends Phaser.Scene {
             this.player2.y -= 5;// 上方向へ移動を設定
         }
         if (this.player3.x >= D_WIDTH - 100) this.player3_direction = -1;
-        if (this.player3.x <= 100) this.player3_direction = 1;
+        if (this.player3.x <= 200) this.player3_direction = 1;
         // プレイヤーの移動
         if (this.player3_direction == 1) {
             this.player3.x += 10;// 横方向へ移動を設定
